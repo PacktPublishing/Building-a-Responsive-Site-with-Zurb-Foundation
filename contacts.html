@@ -1,0 +1,171 @@
+<!doctype html>
+<html class="no-js" lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Foundation</title>
+    <link rel="stylesheet" href="css/app.css" />
+    <script src="bower_components/modernizr/modernizr.js"></script>
+  </head>
+  <body>
+    <div class="off-canvas-wrap" data-offcanvas>
+      <div class="inner-wrap">
+        <div class="contain-to-grid">
+          <nav id="desktop-top-bar" class="top-bar" data-topbar>
+            <ul class="title-area">
+              <li class="name">
+                <h1><a href="#">Foundography</a></h1>
+              </li>
+            </ul>
+
+            <section class="top-bar-section">
+              <ul class="right">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="portfolio.html">Portfolio</a></li>
+                <li><a href="services.html">Services</a></li>
+                <li><a href="about.html">About</a></li>
+                <li><a href="contacts.html">Contacts</a></li>
+                <li data-dropdown="drop1"><a href="#">Social</a></li>
+                <dl id="drop1" class="content f-dropdown" data-dropdown-content>
+                  <dd><a href="#">Twitter</a></dd>
+                  <dd><a href="#">Facebook</a></dd>
+                  <dd><a href="#">Google+</a></dd>
+                </dl>
+              </ul>
+            </section>
+          </nav>
+
+          <nav id="top-bar" class="tab-bar">
+            <section class="left-small">
+              <a class="left-off-canvas-toggle menu-icon" href="#">
+                <span></span>
+              </a>
+            </section>
+
+            <section class="middle tab-bar-section">
+              <h1 class="title">Foundography</h1>
+            </section>
+          </nav>
+        </div>
+
+        <aside class="left-off-canvas-menu">
+          <ul class="off-canvas-list">
+            <li><label>Foundography</label></li>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="portfolio.html">Portfolio</a></li>
+            <li><a href="services.html">Services</a></li>
+            <li><a href="about.html">About</a></li>
+            <li><a href="contacts.html">Contacts</a></li>
+          </ul>
+        </aside>
+
+        <section class="main-section">
+
+          <div class="contacts">
+            <dl class="contacts menu tabs" data-tab>
+              <dd class="active">
+                <a href="#where-we-are">Where We Are</a>
+              </dd>
+              <dd>
+                <a href="#contact-us">Contact Us</a>
+              </dd>
+              <dd>
+                <a href="#" data-reveal-id="credits">Credits</a>
+              </dd>
+            </dl>
+          </div>
+
+          <div class="contacts content tabs-content">
+            <div class="contacts tab active content" id="where-we-are">
+              <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m12!1m3!1d11881.425939504752!2d12.566036718193507!3d41.885189906599805!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!5e0!3m2!1sit!2sit!4v1418081141649" width="100%" height="500" frameborder="0" style="border:0"></iframe>
+            </div>
+            <div class="contacts tab content" id="contact-us">
+              <form data-abide>
+                <fieldset>
+                  <legend>Get in touch!</legend>
+                  <div class="contact form line">
+                    <div class="mail">
+                      <span class="mail-label"
+                        data-tooltip
+                        aria-has-popup="true"
+                        class="has-tip"
+                        title="insert your e-mail address">e.mail:</span>
+                      <input type="email" class="mail-field" required>
+                      <small class="error">Please insert a valid email address</small>
+                    </div>
+                    <div class="type">
+                      <select class="type-select">
+                        <option>Quote</option>
+                        <option>Information</option>
+                        <option>Suggestion</option>
+                      </select>
+                      <span class="type-label"
+                        data-tooltip
+                        aria-has-popup="true"
+                        class="has-tip"
+                        title="Why are you writing us?">type</span>
+                    </div>
+                  </div>
+                  <div class="contact form line">
+                    <div class="message">
+                      <label><span
+                               data-tooltip
+                               aria-has-popup="true"
+                               class="has-tip"
+                               title="So... what's up?">
+                        message: <textarea required>write your message...</textarea>
+                      </span>
+                      </label>
+                      <small class="error">Please write here a message</small>
+                    </div>
+                  </div>
+                  <div class="contact form line">
+                    <div class="submit">
+                      <input type="submit" class="button expand radius">
+                    </div>
+                  </div>
+                </fieldset>
+                <fieldset>
+                  <legend>Quick Survey</legend>
+                  <h4>Do you like my website?</h4>
+                  <label>yes</label>
+                  <div class="survey yes">
+                    <input id="yes" type="radio" name="like">
+                    <label for="yes"></label>
+                  </div>
+                  <label>no</label>
+                  <div class="survey no">
+                    <input id="no" type="radio" name="like">
+                    <label for="no"></label>
+                  </div>
+                  <h4>How much you'd pay for a photo shooting?</h4>
+                  <div class="range-slider"
+                    data-slider
+                    data-options="display_selector: #sliderOutput;
+                                  start: 400;
+                                  end: 3000;">
+                    <span class="range-slider-handle"></span>
+                    <span class="range-slider-active-segment"></span>
+                  </div>
+                  <span id="sliderOutput"></span>€
+                </fieldset>
+              </form>
+            </div>
+          </div>
+
+        </section>
+
+      </div>
+    </div>
+
+    <div id="credits" class="reveal-modal" data-reveal>
+      <h2>Credits</h2>
+      <p>Made with love using Zurb Foundation.</p>
+      <a class="close-reveal-modal">&#215;</a>
+    </div>
+
+    <script src="bower_components/jquery/dist/jquery.min.js"></script>
+    <script src="bower_components/foundation/js/foundation.min.js"></script>
+    <script src="js/app.js"></script>
+  </body>
+</html>

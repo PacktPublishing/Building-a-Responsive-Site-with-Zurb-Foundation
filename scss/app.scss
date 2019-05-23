@@ -1,0 +1,253 @@
+@import "settings";
+@import "foundation";
+
+// Or selectively include components
+// @import
+//   "foundation/components/accordion",
+//   "foundation/components/alert-boxes",
+//   "foundation/components/block-grid",
+//   "foundation/components/breadcrumbs",
+//   "foundation/components/button-groups",
+//   "foundation/components/buttons",
+//   "foundation/components/clearing",
+//   "foundation/components/dropdown",
+//   "foundation/components/dropdown-buttons",
+//   "foundation/components/flex-video",
+//   "foundation/components/forms",
+//   "foundation/components/grid",
+//   "foundation/components/inline-lists",
+//   "foundation/components/joyride",
+//   "foundation/components/keystrokes",
+//   "foundation/components/labels",
+//   "foundation/components/magellan",
+//   "foundation/components/orbit",
+//   "foundation/components/pagination",
+//   "foundation/components/panels",
+//   "foundation/components/pricing-tables",
+//   "foundation/components/progress-bars",
+//   "foundation/components/reveal",
+//   "foundation/components/side-nav",
+//   "foundation/components/split-buttons",
+//   "foundation/components/sub-nav",
+//   "foundation/components/switches",
+//   "foundation/components/tables",
+//   "foundation/components/tabs",
+//   "foundation/components/thumbs",
+//   "foundation/components/tooltips",
+//   "foundation/components/top-bar",
+//   "foundation/components/type",
+//   "foundation/components/offcanvas",
+//   "foundation/components/visibility";
+
+[data-clearing] li {margin-right: 0;}
+
+#header,
+#main {
+  @include grid-row();
+}
+
+#desktop-top-bar {
+  @extend .show-for-medium-up;
+}
+
+.welcome-box {
+  @extend .show-for-medium-up;
+  @include grid-column(12);
+}
+
+.top-banner {
+  @include grid-column(12);
+}
+
+.top-image {
+  @include grid-column(12);
+}
+
+#top-bar {
+  @extend .hide-for-medium-up;
+}
+
+.services {
+  @include grid-row();
+}
+
+.services.navigation {
+  @include grid-column(3);
+  @extend .hide-for-small;
+}
+
+.services.navigation.list {
+  @include side-nav();
+}
+
+.services.content {
+  @include grid-column(12);
+}
+
+.contacts {
+  @include grid-row();
+}
+
+.about {
+  @include grid-row();
+}
+
+.services.pricing-table {
+  @include grid-column(
+    $columns: 12,
+    $collapse: true
+  );
+}
+
+.services.corporate {
+  @include accordion-container;
+
+  .services.corporate.title {
+    @include accordion-navigation;
+  }
+
+  .services.corporate.content {
+    @include accordion-content;
+  }
+}
+
+.deal {
+  @include panel($bg: orange);
+}
+
+.portfolio,
+.portfolio #portrait,
+.portfolio #lanscape,
+.portfolio #still {
+  @include grid-row();
+}
+
+.portfolio.thumbnail {
+  @include grid-column(12);
+  @include thumb;
+  img {min-width: 100%;}
+}
+
+.grid.gallery {
+  @include block-grid(1);
+}
+
+.grid.gallery li a {
+  @include thumb;
+}
+
+.videobox {
+  @include flex-video-container();
+}
+
+.contact.form.line {
+  @include grid-row();
+
+  .mail-label {
+    @include prefix-postfix-base();
+    @include prefix;
+    @include grid-column(3);
+  }
+
+  .mail-field {
+    @include grid-column(9);
+  }
+
+  .type-label {
+    @include prefix-postfix-base();
+    @include postfix;
+    @include grid-column(3);
+  }
+
+  .type-select {
+    @include grid-column(9);
+  }
+}
+
+.contact.form.line .mail,
+.contact.form.line .type,
+.contact.form.line .message,
+.contact.form.line .submit {
+  @include grid-column(12);
+}
+
+.survey.yes,
+.survey.no {
+  @include switch;
+}
+
+.about.menu {
+  @include button-group-container();
+  @include grid-row();
+
+  &>li {
+    @include button-group-style($even: 3);
+
+    a {
+      @include button($full-width: true);
+    }
+  }
+}
+
+@media #{$small-only} {
+  .top-image {
+    @include grid-column(12);
+  }
+}
+
+@media #{$medium-only} {
+  .top-image {
+    @include grid-column(6);
+  }
+}
+
+@media #{$medium-up} {
+  .services.content {
+    @include grid-column(9);
+  }
+
+  .portfolio.thumbnail {
+    @include grid-column(6);
+  }
+
+  .grid.gallery {
+    @include block-grid(2);
+  }
+
+  .contact.form.line .mail {
+    @include grid-column(8);
+  }
+
+  .contact.form.line .type {
+    @include grid-column(4);
+  }
+
+  .contact.form.line .message {
+    @include grid-column(12);
+  }
+
+  .contact.from.line .submit {
+    @include grid-column(12);
+  }
+}
+
+@media #{$large-up} {
+  .top-image {
+    @include grid-column(3);
+  }
+
+  .services.pricing-table {
+    @include grid-column(
+      $columns: 4,
+      $collapse: true
+    );
+  }
+
+  .portfolio.thumbnail {
+    @include grid-column(3);
+  }
+
+  .grid.gallery {
+    @include block-grid(3);
+  }
+}

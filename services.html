@@ -1,0 +1,163 @@
+<!doctype html>
+<html class="no-js" lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Foundation</title>
+    <link rel="stylesheet" href="css/app.css" />
+    <script src="bower_components/modernizr/modernizr.js"></script>
+  </head>
+  <body>
+    <div class="off-canvas-wrap" data-offcanvas>
+      <div class="inner-wrap">
+        <div class="contain-to-grid">
+          <nav id="desktop-top-bar" class="top-bar" data-topbar>
+            <ul class="title-area">
+              <li class="name">
+                <h1><a href="#">Foundography</a></h1>
+              </li>
+            </ul>
+
+            <section class="top-bar-section">
+              <ul class="right">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="portfolio.html">Portfolio</a></li>
+                <li><a href="services.html">Services</a></li>
+                <li><a href="about.html">About</a></li>
+                <li><a href="contacts.html">Contacts</a></li>
+                <li data-dropdown="drop1"><a href="#">Social</a></li>
+                <dl id="drop1" class="content f-dropdown" data-dropdown-content>
+                  <dd><a href="#">Twitter</a></dd>
+                  <dd><a href="#">Facebook</a></dd>
+                  <dd><a href="#">Google+</a></dd>
+                </dl>
+              </ul>
+            </section>
+          </nav>
+
+          <nav id="top-bar" class="tab-bar">
+            <section class="left-small">
+              <a class="left-off-canvas-toggle menu-icon" href="#">
+                <span></span>
+              </a>
+            </section>
+
+            <section class="middle tab-bar-section">
+              <h1 class="title">Foundography</h1>
+            </section>
+          </nav>
+        </div>
+
+        <aside class="left-off-canvas-menu">
+          <ul class="off-canvas-list">
+            <li><label>Foundography</label></li>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="portfolio.html">Portfolio</a></li>
+            <li><a href="services.html">Services</a></li>
+            <li><a href="about.html">About</a></li>
+            <li><a href="contacts.html">Contacts</a></li>
+          </ul>
+        </aside>
+
+        <section class="main-section">
+
+          <div data-alert class="alert-box info">
+            Check out our special weddings deal!
+            <a href="#" class="close">&times;</a>
+          </div>
+
+          <div class="services">
+            <div class="services navigation">
+              <ul class="services navigation list">
+                <li><h4>Services:</h4></li>
+                <li><a href="#advertising">Advertising</a></li>
+                <li><a href="#corporate">Corporate</a></li>
+                <li><a href="#wedding">Wedding</a></li>
+                <li><a href="#book">Book</a></li>
+              </ul>
+            </div>
+
+            <div class="services content">
+              <h3><a name="advertising"></a>Advertising</h3>
+              <div data-equalizer>
+                <ul class="services standard pricing-table">
+                  <div data-equalizer-watch>
+                  <li class="title">Standard</li>
+                  <li class="price">€1499.99</li>
+                  <li class="description">An awesome description</li>
+                  <li class="bullet-item">100 Pictures</li>
+                  <li class="bullet-item">3 Days</li>
+                  <li class="bullet-item">Full Post-Production</li>
+                  </div>
+                  <li class="cta-button">
+                    <a class="button" href="#">Buy Now</a>
+                  </li>
+                </ul>
+                <ul class="services basic pricing-table">
+                  <div data-equalizer-watch>
+                  <li class="title">Basic</li>
+                  <li class="price">€899.99</li>
+                  <li class="description">An awesome description</li>
+                  </div>
+                  <li class="cta-button">
+                    <a class="button" href="#">Buy Now</a>
+                  </li>
+                </ul>
+                <ul class="services pro pricing-table">
+                  <div data-equalizer-watch>
+                  <li class="title">Pro</li>
+                  <li class="price">€2499.99</li>
+                  <li class="description">An awesome description</li>
+                  <li class="bullet-item">300 Pictures</li>
+                  <li class="bullet-item">5 Days</li>
+                  <li class="bullet-item">Full Post-Production</li>
+                  </div>
+                  <li class="cta-button">
+                    <a class="button" href="#">Buy Now</a>
+                  </li>
+                </ul>
+              </div>
+
+              <h3><a name="corporate"></a>Corporate</h3>
+              <dl class="services corporate" data-accordion>
+                <dd class="services corporate title">
+                  <a href="#headshots">Headshots</a>
+                  <div id="headshots" class="services corporate content active">
+                    <img src="http://placehold.it/720x240&text=HEADSHOTS" />
+                  </div>
+                </dd>
+                <dd class="services corporate title">
+                  <a href="#groups">Groups</a>
+                  <div id="groups" class="services corporate content">
+                    <img src="http://placehold.it/720x240&text=GROUPS" />
+                  </div>
+                </dd>
+                <dd class="services corporate title">
+                  <a href="#industrial">Industrial</a>
+                  <div id="industrial" class="services corporate content">
+                    <img src="http://placehold.it/720x240&text=INDUSTRIAL" />
+                  </div>
+                </dd>
+              </dl>
+
+              <h3><a name="wedding"></a>Wedding</h3>
+              <div class="deal">
+                <h2>Super Deal!</h2>
+                <p>Every four weddings a funeral is free</p>
+              </div>
+              <img src="http://placehold.it/720x480" />
+
+              <h3><a name="book"></a>Book</h3>
+              <img src="http://placehold.it/720x480" />
+            </div>
+          </div>
+
+        </section>
+
+      </div>
+    </div>
+    <script src="bower_components/jquery/dist/jquery.min.js"></script>
+    <script src="bower_components/foundation/js/foundation.min.js"></script>
+    <script src="js/app.js"></script>
+  </body>
+</html>

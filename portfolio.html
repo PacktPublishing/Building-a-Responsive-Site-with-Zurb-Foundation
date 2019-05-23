@@ -1,0 +1,188 @@
+<!doctype html>
+<html class="no-js" lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Foundation</title>
+    <link rel="stylesheet" href="css/app.css" />
+    <script src="bower_components/modernizr/modernizr.js"></script>
+  </head>
+  <body>
+    <div class="off-canvas-wrap" data-offcanvas>
+      <div class="inner-wrap">
+        <div class="contain-to-grid">
+          <nav id="desktop-top-bar" class="top-bar" data-topbar>
+            <ul class="title-area">
+              <li class="name">
+                <h1><a href="#">Foundography</a></h1>
+              </li>
+            </ul>
+
+            <section class="top-bar-section">
+              <ul class="right">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="portfolio.html">Portfolio</a></li>
+                <li><a href="services.html">Services</a></li>
+                <li><a href="about.html">About</a></li>
+                <li><a href="contacts.html">Contacts</a></li>
+                <li data-dropdown="drop1"><a href="#">Social</a></li>
+                <dl id="drop1" class="content f-dropdown" data-dropdown-content>
+                  <dd><a href="#">Twitter</a></dd>
+                  <dd><a href="#">Facebook</a></dd>
+                  <dd><a href="#">Google+</a></dd>
+                </dl>
+              </ul>
+            </section>
+          </nav>
+
+          <nav id="top-bar" class="tab-bar">
+            <section class="left-small">
+              <a class="left-off-canvas-toggle menu-icon" href="#">
+                <span></span>
+              </a>
+            </section>
+
+            <section class="middle tab-bar-section">
+              <h1 class="title">Foundography</h1>
+            </section>
+          </nav>
+        </div>
+
+        <aside class="left-off-canvas-menu">
+          <ul class="off-canvas-list">
+            <li><label>Foundography</label></li>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="portfolio.html">Portfolio</a></li>
+            <li><a href="services.html">Services</a></li>
+            <li><a href="about.html">About</a></li>
+            <li><a href="contacts.html">Contacts</a></li>
+          </ul>
+        </aside>
+
+        <section class="main-section">
+
+          <div data-magellan-expedition="fixed">
+            <dl class="sub-nav">
+              <dd data-magellan-arrival="portrait">
+                <a href="#portrait">Portrait</a>
+              </dd>
+              <dd data-magellan-arrival="landscape">
+                <a href="#landscape">Landscape</a>
+              </dd>
+              <dd data-magellan-arrival="still">
+                <a href="#still">Still</a>
+              </dd>
+              <dd data-magellan-arrival="video">
+                <a href="#video">Video</a>
+              </dd>
+            </dl>
+          </div>
+
+          <div id="portrait">
+            <a name="portrait" data-magellan-destination="portrait"></a>
+            <hr>
+            <a class="portfolio thumbnail" href="http://placehold.it/1024x1536">
+              <img src="http://placehold.it/200x300" />
+            </a>
+
+            <a class="portfolio thumbnail" href="http://placehold.it/1024x1536">
+              <img src="http://placehold.it/200x300" />
+            </a>
+
+            <a class="portfolio thumbnail" href="http://placehold.it/1024x1536">
+              <img src="http://placehold.it/200x300" />
+            </a>
+
+            <a class="portfolio thumbnail" href="http://placehold.it/1024x1536">
+              <img src="http://placehold.it/200x300" />
+            </a>
+
+            <a class="portfolio thumbnail" href="http://placehold.it/1024x1536">
+              <img src="http://placehold.it/200x300" />
+            </a>
+
+            <a class="portfolio thumbnail" href="http://placehold.it/1024x1536">
+              <img src="http://placehold.it/200x300" />
+            </a>
+
+            <a class="portfolio thumbnail" href="http://placehold.it/1024x1536">
+              <img src="http://placehold.it/200x300" />
+            </a>
+
+            <a class="portfolio thumbnail" href="http://placehold.it/1024x1536">
+              <img src="http://placehold.it/200x300" />
+            </a>
+          </div>
+
+          <div id="landscape">
+            <a name="landscape" data-magellan-destination="landscape"></a>
+            <hr>
+            <ul class="grid gallery clearing-thumbs" data-clearing>
+              <li><a href="http://placehold.it/1536x1024">
+                <img src="http://placehold.it/900x600" />
+              </a></li>
+              <li><a href="http://placehold.it/1536x1024">
+                <img src="http://placehold.it/900x600" />
+              </a></li>
+
+              <li><a href="http://placehold.it/1536x1024">
+                <img src="http://placehold.it/900x600" />
+              </a></li>
+
+              <li><a href="http://placehold.it/1536x1024">
+                <img src="http://placehold.it/900x600" />
+              </a></li>
+
+              <li><a href="http://placehold.it/1536x1024">
+                <img src="http://placehold.it/900x600" />
+              </a></li>
+
+              <li><a href="http://placehold.it/1536x1024">
+                <img src="http://placehold.it/900x600" />
+              </a></li>
+            </ul>
+          </div>
+
+          <div id="still">
+            <a name="still" data-magellan-destination="still"></a>
+            <hr>
+            <ul class="grid gallery"
+              data-interchange="[still-gallery-landscape.html, (landscape)],
+                                [still-gallery-portrait.html, (portrait)]">
+            </ul>
+          </div>
+
+          <div id="video">
+            <a name="video" data-magellan-destination="video"></a>
+            <hr>
+            <div class="videobox">
+              <iframe
+                width="560"
+                height="315"
+                src="https://www.youtube.com/embed/5ufblMnJRtY"
+                frameborder="0"
+                allowfullscreen>
+              </iframe>
+            </div>
+            <div class="videobox">
+              <iframe
+                src="https://player.vimeo.com/video/5319024"
+                width="500"
+                height="375"
+                frameborder="0"
+                webkitallowfullscreen
+                mozallowfullscreen
+                allowfullscreen>
+              </iframe>
+            </div>
+          </div>
+
+        </section>
+
+      </div>
+    </div>
+    <script src="bower_components/jquery/dist/jquery.min.js"></script>
+    <script src="bower_components/foundation/js/foundation.min.js"></script>
+    <script src="js/app.js"></script>
+  </body>
+</html>

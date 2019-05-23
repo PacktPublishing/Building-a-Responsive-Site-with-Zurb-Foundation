@@ -1,5 +1,5 @@
-# Rapid Flask [Video]
-This is the code repository for [Rapid Flask [Video]](https://www.packtpub.com/application-development/rapid-flask-video?utm_source=github&utm_medium=repository&utm_campaign=9781783554256), published by [Packt](https://www.packtpub.com/?utm_source=github). It contains all the supporting project files necessary to work through the video course from start to finish.
+# Building a Responsive Site with Zurb Foundation [Video]
+This is the code repository for [Building a Responsive Site with Zurb Foundation [Video]](https://www.packtpub.com/web-development/building-responsive-site-zurb-foundation-video?utm_source=github&utm_medium=repository&utm_campaign=9781783285174), published by [Packt](https://www.packtpub.com/?utm_source=github). It contains all the supporting project files necessary to work through the video course from start to finish.
 ## About the Video Course
 Zurb Foundation is one of the most diffused best performing front-end design frameworks out there.
 
@@ -20,22 +20,23 @@ At the end of the course, you will have the skills to create responsive websites
 <H2>What You Will Learn</H2>
 <DIV class=book-info-will-learn-text>
 <UL>
-<LI>Python programming 
-<LI>Application programming 
-<LI>The semantics of general programming 
-<LI>The format of coding applications 
-<LI>All the functions of Python programming 
-<LI>Application programming </LI></UL></DIV>
+<LI><SPAN style="LINE-HEIGHT: 20px; BACKGROUND-COLOR: transparent">Scaffold a new website using Zurb Foundation</SPAN> 
+<LI><SPAN style="LINE-HEIGHT: 20px; BACKGROUND-COLOR: transparent">Play with a responsive design using Foundation's grid system and media queries</SPAN> 
+<LI><SPAN style="LINE-HEIGHT: 20px; BACKGROUND-COLOR: transparent">Create effective site navigation optimized for both desktop and mobile platforms using side-nav and magellan</SPAN> 
+<LI><SPAN style="LINE-HEIGHT: 20px; BACKGROUND-COLOR: transparent">Master different content elements using powerful Foundation classes and great typography balance</SPAN> 
+<LI><SPAN style="LINE-HEIGHT: 20px; BACKGROUND-COLOR: transparent">Show effective media elements such as flex-video, interchange, and lightboxes without penalizing mobile users</SPAN> 
+<LI><SPAN style="LINE-HEIGHT: 20px; BACKGROUND-COLOR: transparent">Design beautiful forms to deal with user input</SPAN> 
+<LI><SPAN style="LINE-HEIGHT: 20px; BACKGROUND-COLOR: transparent">Use Foundation JavaScript plug-ins to make the content a bit more dynamic and pleasant for the viewer</SPAN> 
+<LI><SPAN style="LINE-HEIGHT: 20px; BACKGROUND-COLOR: transparent">Customize the Framework style to transform mock-ups into production-ready websites</SPAN> </LI></UL></DIV>
 
 ## Instructions and Navigation
 ### Assumed Knowledge
 To fully benefit from the coverage included in this course, you will need:<br/>
-Basic Knowledge front-end design framework
-Also, knowledge of different data formats such as CSV, XML, and JSON is also essential.
+Basic Knowledge front-end design framework. Also, knowledge of different data formats such as CSV, XML, and JSON is also essential.
 ### Technical Requirements
 This course has the following software requirements:<br/>
-JavaScript
-SASS 
+1. JavaScript 
+2. SASS
 
 ## Related Products
 * [Hands-On Incident Response Analysis [Video]](https://www.packtpub.com/networking-and-servers/hands-incident-response-analysis-video?utm_source=github&utm_medium=repository&utm_campaign=9781838552046)
